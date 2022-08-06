@@ -10,7 +10,7 @@ html {
 body {
   min-height: 100vh;
   max-width: 100%;
-  background-image: url("https://cdn.discordapp.com/attachments/636502333718790154/938166990395293797/Video_Full_HD_1920x1080_px.jpeg");
+  background-image: url("https://cdn.discordapp.com/attachments/905511038923976704/1005539731506995251/Lines-colorful-abstract-black-background_3840x21602.jpg");
   background-size: cover;
   background-attachment: fixed;
   color: #ffffff
@@ -21,7 +21,7 @@ body {
 }
 
 .header {
-  margin: 20px 0 55px;
+  margin: 20px 0 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,13 +29,21 @@ body {
 
 .avatar img {
   border-radius: 50%;
-  width: 96px;
-  height: 96px;
-  margin-bottom: 12px;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 15px;
 }
+
 
 .username {
   text-align: center;
+  -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.1));
+}
+
+h3 {
+
+  font-size: 2em;
+
 }
 
 .long-btn {
@@ -43,8 +51,8 @@ body {
   border-radius: 20px;
   border: 2px solid #000000;
   padding: 5px;
-  max-width: 540px;
-  height: 42px;
+  max-width: 500px;
+  height: 45px;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -60,43 +68,17 @@ body {
   transition-duration: 0.3s;
 }
 
-.circle ul {
-  margin: 30px;
-  text-align: center;
-  justify-content: center;
-  align-items: center; 
-  /* */
-}
 
-.circle ul li {
-  display: inline-block;
-  list-style: none;
-  margin: 0px 5px;
-}
-
-.circle ul li .fab {
-  font-size: 36px;
-  line-height: 50px;
-  transition: 0.6s;
-  color: #18191c;
-  list-style: none;
-}
-
-.circle ul li a {
-  text-decoration: none;
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  transition: 0.5s;
-}
 
 .footer {
   text-align: center;
   margin-bottom: 15px;
+   -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.25));
 }
 
 .footer a{
-  color: #18191c;
+  color: #f0f0f0;
   text-decoration: none;
   font-weight: bold;
 }
+Footer
