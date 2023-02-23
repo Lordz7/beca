@@ -1,94 +1,335 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"> 
+  <link href="https://northernsi.de/ebiofavicon.ico" rel="icon" type="image/x-icon"> 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" rel="stylesheet"> 
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"> 
+  <meta content="・@creed" property="og:title"> 
+  <meta content="website" property="og:type"> 
+  <meta content="https://killa.lol/" property="og:url"> 
+  <meta content="{avatar_url}" property="og:image"> 
+  <meta content="Saeed 's Social links and profile." property="og:description"> 
+  <meta content="#2f3136" name="theme-color"> 
+  <title>$</title> 
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lordj-Website</title>
-  <link href="https://cdn.discordapp.com/attachments/993599509907128430/1005553438156935198/unknown.png" rel="icon">
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
 
-  <!-- Css -->
-  <link rel="stylesheet" href="./css/main.css" />
-  <link rel="stylesheet" href="./css/long_btn.css" />
+    html,
+    body {
+        display: grid;
+        height: 100%;
+        width: 100%;
+        place-items: center;
+        {background_placeholder}
+    }
 
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/0d70a821da.js" crossorigin="anonymous">
+    .title {
+        text-align: center;
+    }
 
-  </script>
+    .title .quote {
+        margin-top: 5px;
+    }
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet" />
-</head>
-</head>
+    .avatar {
+        border: 5px solid #23272A;
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+        position: relative;
+        left: 10px;
+    }
 
-<body>
+    .status {
+        background-color: #23272A;
+        padding: 5px;
+        border-radius: 38px;
+        z-index: 1;
+        position: relative;
+        top: -10px;
+        left: -50px;
+    }
 
-  <div class="main">
+    .wrapper .button {
+        display: inline-block;
+        height: 60px;
+        width: 60px;
+        float: left;
+        margin: 0 5px;
+        overflow: hidden;
+        background: rgb(111, 111, 111);
+        border-radius: 51px;
+        cursor: pointer;
+        box-shadow: 0px 10px 10px rgb(0, 0, 0);
+        transition: all 0.3s ease-out;
+        color: black;
+    }
+
+    .wrapper .button:hover {
+        width: 200px;
+        color: black;
+    }
+
+    .wrapper .button .icon {
+        display: inline-block;
+        height: 60px;
+        width: 60px;
+        text-align: center;
+        border-radius: 500px;
+        box-sizing: border-box;
+        line-height: 60px;
+        transition: all 0.3s ease-out;
+    }
+
+    .wrapper .button .icon i {
+        font-size: 25px;
+        line-height: 60px;
+        transition: all 0.3s ease-out;
+    }
+
+    .wrapper .button:hover .icon i {
+        color: #fff;
+    }
+
+    .wrapper .button span {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 60px;
+        margin-left: 10px;
+        transition: all 0.3s ease-out;
+        color: black;
+    }
+
+    .footer p, h4, a {
+        text-align: center;
+        color: white;
+    }
 
 
+    /*
+    --------------------------------------------
+    */
 
-    <!-- Avatar -->
-    <div class="header">
-      <div class="avatar">
-        <img
-          src="https://media.discordapp.net/attachments/990287365438333038/1037672917074460722/142bf3de22be31d877c03f2879c8dd3a.png"
-          alt="" />
-      </div>
-      <div class="username">
-        <h3> Lordj#5459  </h3>
-      </div>
-    </div>
+    .wrapper .button.discord:hover .icon {
+        background: #5865F2;
+    }
 
-    <div class="stats">
+    .wrapper .button.discord span {
+        color: #5865F2;
+    }
 
-<img
-                  src="https://discord.c99.nl/widget/theme-3/861619038131978291.png"
-                  alt="Discord Profile"
-              /></a>
-      </a></div>
-    
-    <div class="main-content">
+    .wrapper .button.github:hover .icon {
+        background: #333;
+    }
 
+    .wrapper .button.github span {
+        color: #333;
+    }
 
+    .wrapper .button.tiktok:hover .icon {
+        background: #000000;
+    }
 
-      <!-- Long Button Youtube-->
-      <div class="long-button"><a href="https://youtube.com/channel/UCQAp2oMu_DjXZi0Ouj0RZwQ" target="_blank"
-          class="long-btn-youtube"><i class="fa-brands fa-youtube fa-xl" style=" color: White;">ㅤ</i>YouTube</a></div>
+    .wrapper .button.tiktok span {
+        color: #000000;
+    }
 
-      <!-- Long Button Discord -->
-      <div class="long-button"><a href="https://discord.gg/KDgZwYZwy5" target="_blank" class="long-btn-discord"><i
-            class="fa-brands fa-discord fa-xl" style=" color: White;">ㅤ</i> Discordㅤ</a></div>
+    .wrapper .button.youtube:hover .icon {
+        background: #c4302b;
+    }
 
-      <!-- Long Button Bot -->
-      <div class="long-button"><a href="https://top.gg/bot/990255448961732628" target="_blank"
-          class="long-btn-sketch"><i class="fa-brands fa-sketch fa-xl" style=" color: White;">ㅤ</i>Add Bot Cj </a></div>
+    .wrapper .button.youtube span {
+        color: #c4302b;
+    }
 
-      <!-- Long Button Instagram -->
-      <div class="long-button"><a href="https://www.instagram.com/vhenrmoralless/" target="_blank"
-          class="long-btn-instagram"><i class="fa-brands fa-instagram fa-xl" style=" color: White;">ㅤ</i>Instagram</a>
-      </div>
+    .wrapper .button.twitch:hover .icon {
+        background: #6441a5;
+    }
 
-      <!-- Long Button Telegram -->
-      <div class="long-button"><a href="https://t.me/vhenrmoralles" target="_blank" class="long-btn-telegram"><i
-            class="fa-brands fa-telegram fa-xl" style=" color: White;">ㅤ</i>Telegram </a></div>
+    .wrapper .button.twitch span {
+        color: #6441a5;
+    }
 
-      <!-- Long Button GitHub -->
-      <div class="long-button"><a href="https://github.com/Henryyy737373" target="_blank"
-          class="long-btn-github"><i class="fa-brands fa-github fa-xl" style=" color: White;"> ㅤ</i>GitHubㅤ</a></div>
+    .wrapper .button.twitter:hover .icon {
+        background: #00acee;
+    }
 
+    .wrapper .button.twitter span {
+        color: #00acee;
+    }
 
+    .wrapper .button.snapchat:hover .icon {
+        background: #FFFC00;
+    }
 
+    .wrapper .button.snapchat span {
+        color: #FFFC00;
+    }
 
-      <!-- Footer -->
-      <div class="footer">
-        <p>
-        <p>Developer programmer and musician <a href="https://discord.gg/KDgZwYZwy5/">:)</a></p>
-       
+    .wrapper .button.steam:hover .icon {
+        background: #1b2838;
+    }
 
-      </div>
-    </div>
-</body>
+    .wrapper .button.steam span {
+        color: #1b2838;
+    }
 
+    .wrapper .button.instagram:hover .icon {
+        background: #C13584;
+    }
+
+    .wrapper .button.instagram span {
+        color: #C13584;
+    }
+
+    .wrapper .button.facebook:hover .icon {
+        background: #4267B2;
+    }
+
+    .wrapper .button.facebook span {
+        color: #4267B2;
+    }
+
+    .wrapper .button.spotify:hover .icon {
+        background: #1DB954;
+    }
+
+    .wrapper .button.spotify span {
+        color: #1DB954;
+    }
+
+    .wrapper .button.reddit:hover .icon {
+        background: #FF5700;
+    }
+
+    .wrapper .button.reddit span {
+        color: #FF5700;
+    }
+
+    .wrapper .button.soundcloud:hover .icon {
+        background: #ff5500;
+    }
+
+    .wrapper .button.soundcloud span {
+        color: #ff5500;
+    }
+
+    .wrapper .button.pinterest:hover .icon {
+        background: #cc0000;
+    }
+
+    .wrapper .button.pinterest span {
+        color: #cc0000;
+    }
+
+    .wrapper .button:hover .icon {
+        background: #4078c0;
+    }
+
+    .wrapper .button span {
+        color: #4078c0;
+    }
+
+    .badge {
+        position: relative;
+        display: inline-block;
+        height: 28px;
+        width: 28px;
+    }
+
+    .badge .badge-tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -60px;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    .badge .badge-tooltiptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+    }
+
+    .badge:hover .badge-tooltiptext {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .editBtn {
+        background-color: #282828;
+        background-size: cover;
+        border-radius: 7px;
+        padding: 8px;
+        color: white;
+        cursor: pointer;
+    }
+</style>
+ </head> 
+ <body style="background-image: url('https://cdn.discordapp.com/attachments/1061718877668659350/1067157529341202573/MFXQ2BSBBJBRBLIPRXASTHK4EA.jpg'); background-size: cover;"> 
+  <div class="title"> 
+   <div class="title-img"> 
+    <center>
+     <img alt="Avatar" class="avatar" style="position: center;" src="https://cdn.discordapp.com/attachments/1061718877668659350/1067157431307747549/326515780_714210360408310_2552856817792127124_n.jpg"> 
+     <center>
+      <h1 class="owner" style="display: inline-block; text-shadow: 0px 1px 1px ;font-family: 'PF Tempesta Five', sans-serif; color: #fff; text-align: center; background-image: url('https://cdn.discordapp.com/attachments/987149728800198686/991834200309248070/sparkle.gif');">SAEED</h1> 
+      <p class="quote" style="color: #ffffff"> Killa.lol/creed </p> 
+     </center>
+    </center>
+   </div> 
+   <div class="badge"> 
+    <img src="https://cdn.discordapp.com/emojis/1067121743380090960.webp?size=80&amp;quality=lossless" style="width: 20px; height: 20px;" alt="Alpha User"> 
+    <span class="badge-tooltiptext">Alpha user</span> 
+   </div> 
+   <div class="badge"> 
+    <img src="https://cdn.discordapp.com/emojis/809231526901973014.webp?size=80&amp;quality=lossless" style="width: 20px; height: 20px;" alt="Partner"> 
+    <span class="badge-tooltiptext">Partner</span> 
+   </div> 
+   <p class="quote" style="color: #ffffff"> Saeed The Bomber </p> 
+  </div> 
+  <div class="wrapper"> 
+   <div class="button tiktok" onclick="window.open('https://www.tiktok.com/@saeedgoteem', '_blank');"> 
+    <div class="icon"> 
+     <i class="fab fa-tiktok"></i> 
+    </div> 
+    <span>tiktok</span> 
+   </div> 
+   <div class="button discord" onclick="window.open('https://discord.gg/valid', '_blank');"> 
+    <div class="icon"> 
+     <i class="fab fa-discord"></i> 
+    </div> 
+    <span>discord</span> 
+   </div> 
+  </div> 
+  <br>
+  <br> 
+  <a href="https://discord.com/users/762753625151373322" target="_blank"> <img src="https://discord.c99.nl/widget/theme-4/762753625151373322.png" style="
+width: 300px;"></a> 
+  <div class="footer"> 
+   <h4><a href="https://killa.lol/"><b>root@Killa.lol</b></a></h4> 
+  </div> 
+ </body>
 </html>
